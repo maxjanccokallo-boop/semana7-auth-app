@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://semana7-backend.onrender.com/api"
+  baseURL: "https://semana7-auth-backend.onrender.com//api"
 });
 
 // ===============================
@@ -59,7 +59,7 @@ API.interceptors.response.use(
 
         // PEDIR NUEVO ACCESS TOKEN
         const res = await axios.post(
-          "https://semana7-backend.onrender.com/api/auth/refreshtoken",
+          "https://semana7-auth-backend.onrender.com//api/auth/refreshtoken",
           {
             refreshToken,
           }
