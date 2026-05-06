@@ -1,6 +1,7 @@
 // Importa Express para crear la aplicación web
 import express from "express";
 
+
 // Importa CORS para permitir solicitudes desde otros dominios (por ejemplo, desde el frontend)
 import cors from "cors";
 
@@ -26,7 +27,9 @@ app.use(cors(corsOptions));
 
 // Middleware para analizar solicitudes con cuerpo en formato JSON
 app.use(express.json());
-
+app.get("/", (req, res) => {
+  res.send("Backend funcionando correctamente");
+});
 // Middleware para analizar solicitudes con cuerpo en formato URL-encoded (formularios)
 app.use(express.urlencoded({ extended: true }));
 
