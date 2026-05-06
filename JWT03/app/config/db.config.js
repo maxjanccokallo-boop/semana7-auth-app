@@ -1,9 +1,9 @@
 export default {
-    HOST: "localhost",
+    HOST: "trolley.proxy.rlwy.net",
     USER: "root",
-    PASSWORD: "Maxantony123.",
-    DB: "db",
-    PORT: 3306,
+    PASSWORD: "hYRoGteYrlYZqpFesgKSPMZcFkvCqJiY",
+    DB: "railway",
+    PORT: 56786,
     dialect: "mysql",
     pool:{
         max: 5,
